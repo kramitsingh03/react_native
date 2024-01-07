@@ -18,7 +18,6 @@ app.get("/",(req,res)=>{
 
 app.post("/submit",(req,res)=>{
     let {thala} = req.body;
-    console.log(thala);
     let result = thalaFunction(thala);
     if(result === "success"){
         res.render("success.ejs");
