@@ -20,7 +20,7 @@ app.post("/submit",(req,res)=>{
     let {thala} = req.body;
     let result = thalaFunction(thala);
     if(result === "success"){
-        res.render("success.ejs");
+        res.render("success.ejs",{thala});
     }else{
        res.render("failure.ejs");
     }

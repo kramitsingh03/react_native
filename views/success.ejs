@@ -1,8 +1,9 @@
 <%- include("includes/header.ejs") %>
 <body>
     <div class="success">
-        
-        <div class="video"> <h1>thala for a reason</h1><video src="asset/bole jo koyal.mp4" autoplay loop></video></div>
+        <div class="video"> <h1>thala for a reason </h1> <p><%= thala %> = <% for (let i = 0; i < thala.length; i++) { %>
+            <span><%= thala[i] %>  <% if(i < thala.length-1) { %>+<% }%></span>
+        <% } %> : 7</p> <video src="asset/bole jo koyal.mp4" autoplay loop></video></div>
        
         <div class="button"> <a href="/" class="btn btn-primary">Back</a></div>
         
